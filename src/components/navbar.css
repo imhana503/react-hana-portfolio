@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  top:50%;
+  right:0;
+  transform: translateY(-50%);
+  display:flex;
+  flex-direction: column;
+}
+
+.navbar>a{
+  display: inline-flex;
+  align-items: center;
+  margin-right:0;
+  padding:10px;
+  background-color:rgb(67 67 67);
+  /* border-radius: 100%;; */
+  color:#fff;
+}
+
+.navbar>a+a{
+  margin-top:15px;
+}
+
+.navbar svg {
+  font-size:25px;
+}
+
+.navbar span {
+ overflow: hidden;
+ width:0;
+ transition: all 0.7s;
+}
+
+.navbar>a.active,
+.navbar>a:hover{
+  background-color:rgb(132, 32, 224);
+}
+
+.navbar>a:hover span {
+  overflow:visible;
+  width:auto;
+  margin-right:10px;
+  border-radius: 15px;
+}
+
